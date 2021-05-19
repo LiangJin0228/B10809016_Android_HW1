@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">android_airtagApp</string>
+    <string name="welcome">Welcome!歡迎使用Android版本AirTag！</string>
+    <string name="enter_scanPage">進入掃描頁</string>
+    <string name="startScan">開始掃描</string>
+    <string name="stopScan">停止掃描</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

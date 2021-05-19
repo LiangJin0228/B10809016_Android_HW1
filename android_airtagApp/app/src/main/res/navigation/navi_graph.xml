@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_graph"
+    app:startDestination="@id/scanListFragment">
+
+    <fragment
+        android:id="@+id/scanListFragment"
+        android:name="com.example.android_airtagapp.scanListFragment"
+        android:label="fragment_scanner2"
+        tools:layout="@layout/fragment_scan_list" >
+        <action
+            android:id="@+id/action_scanlistFragment_to_scanDetailFragment"
+            app:destination="@id/showDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/showDetails"
+        android:name="com.example.android_airtagapp.showDetails"
+        android:label="fragment_scan_detail"
+        tools:layout="@layout/fragment_show_details" >
+        <argument
+            android:name="mac_address"
+            app:argType="string" />
+        <argument
+            android:name="rssi"
+            app:argType="string" />
+        <argument
+            android:name="content"
+            app:argType="string" />
+    </fragment>
+</navigation>
